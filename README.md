@@ -1,6 +1,4 @@
-**SwarmUI v0.9.7 Beta**.
-
-# Estado
+# SwarmUI
 
 Este proyecto se encuentra en estado **Beta**. Esto significa que, para la mayoría de las tareas, Swarm ofrece herramientas excelentes, pero todavía hay mucho más planificado. Swarm se recomienda como una interfaz ideal para la mayoría de los usuarios, tanto principiantes como profesionales. Aún hay algunos aspectos por pulir.
 
