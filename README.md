@@ -1,32 +1,15 @@
-# SwarmUI
-
 **SwarmUI v0.9.7 Beta**.
 
-*Formerly known as StableSwarmUI.*
+# Estado
 
-A Modular AI Image Generation Web-User-Interface, with an emphasis on making powertools easily accessible, high performance, and extensibility. Supports AI image models (*Stable Diffusion, Z-Image, Flux, Qwen Image, etc.*), and AI video models (*Wan, Hunyuan Video, etc.*), with plans to support eg audio and more in the future.
+Este proyecto se encuentra en estado **Beta**. Esto significa que, para la mayoría de las tareas, Swarm ofrece herramientas excelentes, pero todavía hay mucho más planificado. Swarm se recomienda como una interfaz ideal para la mayoría de los usuarios, tanto principiantes como profesionales. Aún hay algunos aspectos por pulir.
 
-![ui-screenshot](.github/images/swarmui.jpg)
+A los usuarios principiantes les encantará la interfaz principal de la pestaña **Generate**, que facilita la generación de cualquier cosa con una variedad de funciones potentes. Los usuarios avanzados pueden preferir la pestaña **Comfy Workflow** para acceder al grafo sin restricciones, pero aun así tendrán motivos para volver a la pestaña **Generate** por sus funciones de conveniencia (editor de imágenes, generación automática de flujos de trabajo, etc.) y herramientas avanzadas (por ejemplo, el **Grid Generator**).
 
-- **Discord Community**: Join the [Discord](https://discord.gg/q2y38cqjNw) to discuss the project, get support, see announcements, etc.
-- **Announcements**: Follow the [Feature Announcements Thread](https://github.com/mcmonkeyprojects/SwarmUI/discussions/1) for updates on new features.
-- **General documentation**: [/docs folder](https://github.com/mcmonkeyprojects/SwarmUI/blob/master/docs/README.md)
-- **Website**: [SwarmUI.net](https://swarmui.net/)
+Quienes estén interesados en ayudar a llevar Swarm de Beta a un estado de **Lanzamiento completo**, listo para cualquier cosa y totalmente pulido, pueden enviar PRs (lean primero el documento de [Contributing](/CONTRIBUTING.md)). También pueden contactarnos aquí en GitHub o en [Discord](https://discord.gg/q2y38cqjNw). Se recomienda encarecidamente ponerse en contacto para preguntar sobre los planes de una función antes de enviar un PR, ya que puede que ya existan planes específicos o incluso un trabajo en progreso.
 
-----
-
-# Status
-
-This project is in **Beta** status. This means for most tasks, Swarm has excellent tooling available to you, but there is much more planned. Swarm is recommended as an ideal UI for most users, beginners and pros alike. There are still some things to be worked out.
-
-Beginner users will love Swarm's primary Generate tab interface, making it easy to generate anything with a variety of powerful features. Advanced users may favor the Comfy Workflow tab to get the unrestricted raw graph, but will still have reason to come back to the Generate tab for convenience features (image editor, auto-workflow-generation, etc) and powertools (eg Grid Generator).
-
-Those interested in helping push Swarm from Beta to a Full ready-for-anything perfected Release status are welcome to submit PRs (read the [Contributing](/CONTRIBUTING.md) document first), and you can contact us here on GitHub or on [Discord](https://discord.gg/q2y38cqjNw). I highly recommend reaching out to ask about plans for a feature before PRing it. There may already be specific plans or even a work in progress.
-
-Key feature targets not yet implemented:
-- Better mobile browser support
-- full detail "Current Model" display in UI, separate from the model selector (probably as a tab within the batch sidebar?)
-- LLM-assisted prompting (there's an extension for it, but LLM control should be natively supported)
-- convenient direct-distribution of Swarm as a program ([Tauri](https://tauri.app/), [Blazor Desktop](https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/), or an Electron app?)
-
-# Donate
+Objetivos clave de funciones que aún no se han implementado:
+- Mejor compatibilidad con navegadores móviles
+- Visualización detallada y completa del **“Modelo actual”** en la interfaz, separada del selector de modelos (probablemente como una pestaña dentro de la barra lateral de lotes)
+- Generación de prompts asistida por LLM (existe una extensión, pero el control de LLM debería estar soportado de forma nativa)
+- Distribución directa y conveniente de Swarm como programa ([Tauri](https://tauri.app/), [Blazor Desktop](https://learn.microsoft.com/en-us/training/modules/build-blazor-hybrid/) o una app Electron)
