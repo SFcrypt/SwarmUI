@@ -59,7 +59,7 @@ Paths:
 	#When true, output paths always have the username as a folder.
 	#When false, this will be skipped.
 	#Keep this on in multi-user environments.
-	AppendUserNameToOutputPath: true
+	AppendUserNameToOutputPath: false
 	#If true, when a user deletes an image, send it to the OS Recycle Bin instead of permanently deleting it.
 	#If false, image files are permanently deleted.
 	#Defaults to false.
