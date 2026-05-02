@@ -1,11 +1,9 @@
 import ipywidgets as widgets
 from IPython.display import display, HTML, clear_output
 from IPython import get_ipython
-
 def launch_interface():
 
     process_out = widgets.Output()
-
     css_url = "https://raw.githubusercontent.com/gutris1/segsmaker/refs/heads/main/script/SM/setup.css"
     display(HTML(f'<link rel="stylesheet" type="text/css" href="{css_url}">'))
 
@@ -17,8 +15,7 @@ def launch_interface():
     .setup-box {{
         padding: 10px;
         border-radius: 16px;
-        background: #000000;
-    }}
+        background: #000000;}}
 
     .custom-btn {{
         width: 100%;
@@ -28,34 +25,29 @@ def launch_interface():
         background-size: cover;
         background-position: center;
         color: white !important;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 700;
         text-transform: lowercase;
         text-shadow: 0 2px 6px rgba(0,0,0,.95);
-        padding-top: 8px;
+        padding-top: 10px;
         align-items: flex-start;
         justify-content: center;
         box-shadow: inset 0 0 0 1px #222;
-        transition: all .15s ease-in-out;
-    }}
+        transition: all .15s ease-in-out;}}
 
     .custom-btn:hover {{
         border-color: #00aaff !important;
         box-shadow: 0 0 0 2px #00aaff;
-        transform: translateY(-2px);
-    }}
+        transform: translateY(-2px);}}
 
     .instalar {{
-        background-image: url('{instalar_img}');
-    }}
+        background-image: url('{instalar_img}');}}
 
     .desinstalar {{
-        background-image: url('{desinstalar_img}');
-    }}
+        background-image: url('{desinstalar_img}');}}
 
     .widget-button {{
-        min-width: 0 !important;
-    }}
+        min-width: 0 !important;}}
     </style>
     """))
 
@@ -80,8 +72,7 @@ def launch_interface():
 
     for btn, clase in [
         (btn_instalar, "instalar"),
-        (btn_desinstalar, "desinstalar")
-    ]:
+        (btn_desinstalar, "desinstalar")]:
         btn.add_class("custom-btn")
         btn.add_class(clase)
 
@@ -93,15 +84,12 @@ def launch_interface():
         layout=widgets.Layout(
             width="100%",
             height="255px",
-            gap="10px"
-        )
-    )
+            gap="10px"))
 
     global panel
     panel = widgets.VBox(
         [row],
-        layout=widgets.Layout(width="100%")
-    )
+        layout=widgets.Layout(width="100%"))
 
     panel.add_class("setup-box")
 
