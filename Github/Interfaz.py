@@ -1,6 +1,7 @@
 import ipywidgets as widgets
 from IPython.display import display, HTML, clear_output
 from IPython import get_ipython
+
 def launch_interface():
 
     process_out = widgets.Output()
