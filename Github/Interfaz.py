@@ -16,7 +16,8 @@ def launch_interface():
     .setup-box {{
         padding: 10px;
         border-radius: 16px;
-        background: #000000;}}
+        background: #000000;
+        overflow: hidden;}}
 
     .custom-btn {{
         width: 100%;
@@ -34,7 +35,8 @@ def launch_interface():
         align-items: flex-start;
         justify-content: center;
         box-shadow: inset 0 0 0 1px #222;
-        transition: all .15s ease-in-out;}}
+        transition: all .15s ease-in-out;
+        overflow: hidden;}}
 
     .custom-btn:hover {{
         border-color: #00aaff !important;
@@ -49,6 +51,10 @@ def launch_interface():
 
     .widget-button {{
         min-width: 0 !important;}}
+
+    .widget-box, .output_wrapper, .output {{
+        overflow: hidden !important;
+        max-height: none !important;}}
     </style>
     """))
 
@@ -84,7 +90,7 @@ def launch_interface():
         [btn_instalar, btn_desinstalar],
         layout=widgets.Layout(
             width="100%",
-            height="255px",
+            height="240px",  # reducido para evitar scroll
             gap="10px"))
 
     global panel
