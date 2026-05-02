@@ -8,7 +8,7 @@ def launch_interface():
     css_url = "https://raw.githubusercontent.com/gutris1/segsmaker/refs/heads/main/script/SM/setup.css"
     display(HTML(f'<link rel="stylesheet" type="text/css" href="{css_url}">'))
 
-    instalar_img = "https://raw.githubusercontent.com/SFcrypt/ColabUI/main/Notebook/00008-0603.png"
+    instalar_img    = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/003219.png"
     desinstalar_img = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/092918.png"
 
     display(HTML(f"""
