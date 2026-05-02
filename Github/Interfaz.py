@@ -9,7 +9,7 @@ def launch_interface():
     display(HTML(f'<link rel="stylesheet" type="text/css" href="{css_url}">'))
 
     instalar_img = "https://raw.githubusercontent.com/SFcrypt/ColabUI/main/Notebook/00008-0603.png"
-    desinstalar_img = "https://raw.githubusercontent.com/SFcrypt/ColabUI/main/Notebook/00002-1225.png"
+    desinstalar_img = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/092918.png"
 
     display(HTML(f"""
     <style>
