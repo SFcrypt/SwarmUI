@@ -82,7 +82,7 @@ def launch_interface():
                 ip.run_line_magic("run", "~/.swarmui/Forge.py")
 
     btn_swarm = widgets.Button(description="swarmui")
-    btn_forge = widgets.Button(description="forge")
+    btn_forge = widgets.Button(description="webui")
 
     for btn, clase in [
         (btn_swarm, "swarm"),
