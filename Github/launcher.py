@@ -65,31 +65,21 @@ def launch_interface():
     </style>
     """))
 
-    def run_script(path):
-        import subprocess, sys, os
-        path = os.path.expanduser(path)
-
-        process = subprocess.Popen(
-            [sys.executable, path],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True
-        )
-
-        for line in process.stdout:
-            print(line, end="")
-
     def run_swarm(_):
         panel.layout.display = "none"
         with process_out:
             clear_output()
-            run_script("~/.conda/Updater.py")
+            ip = get_ipython()
+            if ip:
+                ip.run_line_magic("run", "~/.conda/Updater.py")
 
     def run_forge(_):
         panel.layout.display = "none"
         with process_out:
             clear_output()
-            run_script("~/.conda/Forge.py")
+            ip = get_ipython()
+            if ip:
+                ip.run_line_magic("run", "~/.conda/Forge.py")
 
     btn_swarm = widgets.Button(description="swarmui")
     btn_forge = widgets.Button(description="forge")
