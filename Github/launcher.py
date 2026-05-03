@@ -71,7 +71,7 @@ def launch_interface():
             clear_output()
             ip = get_ipython()
             if ip:
-                ip.run_line_magic("run", "~/.conda/Updater.py")
+                ip.run_line_magic("run", "~/.swarmui/Updater.py")
 
     def run_forge(_):
         panel.layout.display = "none"
@@ -79,7 +79,7 @@ def launch_interface():
             clear_output()
             ip = get_ipython()
             if ip:
-                ip.run_line_magic("run", "~/.conda/Forge.py")
+                ip.run_line_magic("run", "~/.swarmui/Forge.py")
 
     btn_swarm = widgets.Button(description="swarmui")
     btn_forge = widgets.Button(description="forge")
