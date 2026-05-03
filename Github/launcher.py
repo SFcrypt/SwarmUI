@@ -9,7 +9,7 @@ def launch_interface():
     display(HTML(f'<link rel="stylesheet" type="text/css" href="{css_url}">'))
 
     swarm_img = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/003219.png"
-    forge_img = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/092918.png"
+    webui_img = "https://raw.githubusercontent.com/SFcrypt/SwarmUI/main/Github/Cover/092918.png"
 
     display(HTML(f"""
     <style>
@@ -50,8 +50,8 @@ def launch_interface():
         background-image: url('{swarm_img}');
     }}
 
-    .forge {{
-        background-image: url('{forge_img}');
+    .webui {{
+        background-image: url('{webui_img}');
     }}
 
     .widget-button {{
@@ -73,7 +73,7 @@ def launch_interface():
             if ip:
                 ip.run_line_magic("run", "~/.swarmui/Updater.py")
 
-    def run_forge(_):
+    def run_webui(_):
         panel.layout.display = "none"
         with process_out:
             clear_output()
@@ -82,19 +82,19 @@ def launch_interface():
                 ip.run_line_magic("run", "~/.swarmui/Forge.py")
 
     btn_swarm = widgets.Button(description="swarmui")
-    btn_forge = widgets.Button(description="webui")
+    btn_webui = widgets.Button(description="webui")
 
     for btn, clase in [
         (btn_swarm, "swarm"),
-        (btn_forge, "forge")]:
+        (btn_webui, "webui")]:
         btn.add_class("custom-btn")
         btn.add_class(clase)
 
     btn_swarm.on_click(run_swarm)
-    btn_forge.on_click(run_forge)
+    btn_webui.on_click(run_webui)
 
     row = widgets.HBox(
-        [btn_swarm, btn_forge],
+        [btn_swarm, btn_webui],
         layout=widgets.Layout(
             width="100%",
             height="240px",
